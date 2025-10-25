@@ -79,21 +79,19 @@
     </style>
     <?php
     $user = explode(".", $i);
-    $hrmimage[0] = "Dashboard.png";
-    $hrmimage[1] = "EmployeeList.png";
-    $hrmimage[2] = "AddEmployee.png";
+    $hrmimage[0] = "DashBoard.png";
+    $hrmimage[1] = "PendingEvent.png";
+    $hrmimage[2] = "ApprovedEvent.png";
     
-    $hrmimage[3] = "EditEmployee.png";
-    $hrmimage[4] = "AddMultiEmployee.png";
-    $hrmimage[5] = "StoreList.png";
-    $hrmimage[6] = "MarketList.png";
+    $hrmimage[3] = "DeclinedEvents.png";
+    $hrmimage[4] = "EventReport.png";
     ?>
-<div class="modal fade" id="getmeImageMobilelink">
+<div class="modal fade" id="getmeImageEMS">
     <div class="modal-dialog">
         <div class="modal-content" style="width: 150%;margin-left: -100px;"> 
             <div id="loader"></div>
             <div class="modal-header">
-                <h4 class="modal-title">Arqum Portfolio (Mobilelink CallingTree)</h4>
+                <h4 class="modal-title">Arqum Portfolio (EMS)</h4>
                 <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
             </div>
             <div class="modal-body" id="body" style="height: 625px; overflow-y: scroll;">
@@ -109,22 +107,18 @@
                 </ul>
                 </center>
                 <center><h5 id="admin">Dashboard</h5></center>
-                <center><h5 id="user" style="display: none;">EMPLOYEE LIST</h5></center>
-                <center><h5 id="employee" style="display: none;">Add Employee</h5></center>
+                <center><h5 id="user" style="display: none;">Pending Events</h5></center>
+                <center><h5 id="employee" style="display: none;">Approved Events</h5></center>
                 
-                <center><h5 id="candidategrid" style="display: none;">Edit Employee</h5></center>
-                <center><h5 id="candidatelist" style="display: none;">Add Multiple Employee</h5></center>
-                <center><h5 id="department" style="display: none;">Store List</h5></center>
-                <center><h5 id="designation" style="display: none;">Market List</h5></center>
+                <center><h5 id="candidategrid" style="display: none;">Declined Events</h5></center>
+                <center><h5 id="candidatelist" style="display: none;">Events Report</h5></center>
                 <span class='zoom' id='ex2'>
-                    <img class="img-fluid img-thumbnail" id="1" src="{{ URL::to('images/Mobilelink/')}}/{{$hrmimage[0]}}" onclick="cursor()" style="display: block; cursor: zoom-in;"/> 
-                    <img class="img-fluid img-thumbnail" id="2" src="{{ URL::to('images/Mobilelink/')}}/{{$hrmimage[1]}}" onclick="cursor()" style="display: none; cursor: zoom-in;"/>
-                    <img class="img-fluid img-thumbnail" id="3" src="{{ URL::to('images/Mobilelink/')}}/{{$hrmimage[2]}}" onclick="cursor()" style="display: none; cursor: zoom-in;"/>
+                    <img class="img-fluid img-thumbnail" id="1" src="{{ URL::to('images/EMS/')}}/{{$hrmimage[0]}}" onclick="cursor()" style="display: block; cursor: zoom-in;"/> 
+                    <img class="img-fluid img-thumbnail" id="2" src="{{ URL::to('images/EMS/')}}/{{$hrmimage[1]}}" onclick="cursor()" style="display: none; cursor: zoom-in;"/>
+                    <img class="img-fluid img-thumbnail" id="3" src="{{ URL::to('images/EMS/')}}/{{$hrmimage[2]}}" onclick="cursor()" style="display: none; cursor: zoom-in;"/>
                     
-                    <img class="img-fluid img-thumbnail" id="4" src="{{ URL::to('images/Mobilelink/')}}/{{$hrmimage[3]}}" onclick="cursor()" style="display: none; cursor: zoom-in;"/>
-                    <img class="img-fluid img-thumbnail" id="5" src="{{ URL::to('images/Mobilelink/')}}/{{$hrmimage[4]}}" onclick="cursor()" style="display: none; cursor: zoom-in;"/>
-                    <img class="img-fluid img-thumbnail" id="6" src="{{ URL::to('images/Mobilelink/')}}/{{$hrmimage[5]}}" onclick="cursor()" style="display: none; cursor: zoom-in;"/>
-                    <img class="img-fluid img-thumbnail" id="7" src="{{ URL::to('images/Mobilelink/')}}/{{$hrmimage[6]}}" onclick="cursor()" style="display: none; cursor: zoom-in;"/>
+                    <img class="img-fluid img-thumbnail" id="4" src="{{ URL::to('images/EMS/')}}/{{$hrmimage[3]}}" onclick="cursor()" style="display: none; cursor: zoom-in;"/>
+                    <img class="img-fluid img-thumbnail" id="5" src="{{ URL::to('images/EMS/')}}/{{$hrmimage[4]}}" onclick="cursor()" style="display: none; cursor: zoom-in;"/>
                 </span>
 
                 
@@ -145,8 +139,6 @@
         var z = document.getElementById("3");
         var a = document.getElementById("4");
         var b = document.getElementById("5");
-        var c = document.getElementById("6");
-        var d = document.getElementById("7");
 
         var body = document.getElementById("body");
 
@@ -218,7 +210,7 @@
                 body.style.overflow = "auto";
 
             }
-        }else if (b.style.display === "block") {
+        }else {
 
             if (b.style.cursor === "zoom-in") {
                 
@@ -232,40 +224,6 @@
                 b.style.cursor = "zoom-in";
                 b.style.width = "100%";
                 b.style.height = "100%";
-                body.style.overflow = "auto";
-
-            }
-        }else if (c.style.display === "block") {
-
-            if (c.style.cursor === "zoom-in") {
-                
-                c.style.cursor = "zoom-out";
-                c.style.width = "1800px";
-                c.style.height = "1500px";
-                body.style.overflow = "scroll";
-
-            }else if(c.style.cursor === "zoom-out"){
-                
-                c.style.cursor = "zoom-in";
-                c.style.width = "100%";
-                c.style.height = "100%";
-                body.style.overflow = "auto";
-
-            }
-        }else {
-
-            if (d.style.cursor === "zoom-in") {
-                
-                d.style.cursor = "zoom-out";
-                d.style.width = "1900px";
-                d.style.height = "1300px";
-                body.style.overflow = "scroll";
-
-            }else if(d.style.cursor === "zoom-out"){
-                
-                d.style.cursor = "zoom-in";
-                d.style.width = "100%";
-                d.style.height = "100%";
                 body.style.overflow = "auto";
 
             }
@@ -291,12 +249,6 @@
 
         var b = document.getElementById("5");
         var bb = document.getElementById("candidatelist");
-
-        var c = document.getElementById("6");
-        var cc = document.getElementById("department");
-
-        var d = document.getElementById("7");
-        var dd = document.getElementById("designation");
 
         if (x.style.display === "block") {
 
@@ -346,12 +298,6 @@
             b.style.display = "none";
             bb.style.display = "none";
 
-            c.style.display = "none";
-            cc.style.display = "none";
-
-            d.style.display = "none";
-            dd.style.display = "none";
-
         }else if (z.style.display === "block") {
 
             // $("#previous").addClass("active");
@@ -372,62 +318,7 @@
             b.style.display = "none";
             bb.style.display = "none";
 
-            c.style.display = "none";
-            cc.style.display = "none";
-
-            d.style.display = "none";
-            dd.style.display = "none";
-
         }else if (a.style.display === "block") {
-
-            // $("#previous").addClass("active");
-            // previous.style.display = "block";
-
-            y.style.display = "none";
-            yy.style.display = "none";
-
-            x.style.display = "none";
-            xx.style.display = "none";
-
-            z.style.display = "none";
-            zz.style.display = "none";
-
-            a.style.display = "none";
-            aa.style.display = "none";
-
-            b.style.display = "block";
-            bb.style.display = "block";
-
-            c.style.display = "none";
-            cc.style.display = "none";
-
-            d.style.display = "none";
-            dd.style.display = "none";
-
-        }else if (b.style.display === "block") {
-
-            // $("#previous").addClass("active");
-            // previous.style.display = "block";
-
-            y.style.display = "none";
-            yy.style.display = "none";
-
-            x.style.display = "none";
-            xx.style.display = "none";
-
-            z.style.display = "none";
-            zz.style.display = "none";
-
-            a.style.display = "none";
-            aa.style.display = "none";
-
-            b.style.display = "none";
-            bb.style.display = "none";
-
-            c.style.display = "block";
-            cc.style.display = "block";
-
-        }else {
 
             // $("#previous").addClass("active");
             // previous.style.display = "block";
@@ -446,14 +337,8 @@
             a.style.display = "none";
             aa.style.display = "none";
 
-            b.style.display = "none";
-            bb.style.display = "none";
-
-            c.style.display = "none";
-            cc.style.display = "none";
-
-            d.style.display = "block";
-            dd.style.display = "block";
+            b.style.display = "block";
+            bb.style.display = "block";
 
         }
     }
@@ -477,12 +362,6 @@ function hrmprevious(){
 
     var b = document.getElementById("5");
     var bb = document.getElementById("candidatelist");
-
-    var c = document.getElementById("6");
-    var cc = document.getElementById("department");
-
-    var d = document.getElementById("7");
-    var dd = document.getElementById("designation");
     
     if (y.style.display === "block") {
 
@@ -505,12 +384,6 @@ function hrmprevious(){
         b.style.display = "none";
         bb.style.display = "none";
 
-        c.style.display = "none";
-        cc.style.display = "none";
-
-        d.style.display = "none";
-        dd.style.display = "none";
-
     }else if (z.style.display === "block") {
 
         // $("#previous").addClass("active");
@@ -530,12 +403,6 @@ function hrmprevious(){
 
         b.style.display = "none";
         bb.style.display = "none";
-
-        c.style.display = "none";
-        cc.style.display = "none";
-
-        d.style.display = "none";
-        dd.style.display = "none";
 
     }else if (a.style.display === "block") {
 
@@ -557,64 +424,6 @@ function hrmprevious(){
         b.style.display = "none";
         bb.style.display = "none";
 
-        c.style.display = "none";
-        cc.style.display = "none";
-
-        d.style.display = "none";
-        dd.style.display = "none";
-
-    }else if (b.style.display === "block") {
-
-        // $("#previous").addClass("active");
-        // previous.style.display = "block";
-
-        y.style.display = "none";
-        yy.style.display = "none";
-
-        x.style.display = "none";
-        xx.style.display = "none";
-
-        z.style.display = "none";
-        zz.style.display = "none";
-
-        a.style.display = "block";
-        aa.style.display = "block";
-
-        b.style.display = "none";
-        bb.style.display = "none";
-
-        c.style.display = "none";
-        cc.style.display = "none";
-
-        d.style.display = "none";
-        dd.style.display = "none";
-
-    }else if (c.style.display === "block") {
-
-        // $("#previous").addClass("active");
-        // previous.style.display = "block";
-
-        y.style.display = "none";
-        yy.style.display = "none";
-
-        x.style.display = "none";
-        xx.style.display = "none";
-
-        z.style.display = "none";
-        zz.style.display = "none";
-
-        a.style.display = "none";
-        aa.style.display = "none";
-
-        b.style.display = "block";
-        bb.style.display = "block";
-
-        c.style.display = "none";
-        cc.style.display = "none";
-
-        d.style.display = "none";
-        dd.style.display = "none";
-
     }else {
 
         // $("#previous").addClass("active");
@@ -631,17 +440,11 @@ function hrmprevious(){
         z.style.display = "none";
         zz.style.display = "none";
 
-        a.style.display = "none";
-        aa.style.display = "none";
+        a.style.display = "block";
+        aa.style.display = "block";
 
         b.style.display = "none";
         bb.style.display = "none";
-
-        c.style.display = "block";
-        cc.style.display = "block";
-
-        d.style.display = "none";
-        dd.style.display = "none";
 
     }
 }

@@ -16,8 +16,19 @@ use Illuminate\Support\Facades\Route;
 // Route::get('/', function () {
 //     return view('welcome');
 // });
+Route::any('/clear-cache', function () {
+    Artisan::call('cache:clear');
+    Artisan::call('config:clear');
+    Artisan::call('view:clear');
+    Artisan::call('route:clear');
+    return "Cache is cleared";
+});
 
 Route::get('/', function () {
+    return view('Home');
+});
+
+Route::get('/about', function () {
     return view('about');
 });
 Route::get('/skill', function () {

@@ -64,7 +64,7 @@
                     position:absolute; 
                     top:0;
                     right:0;
-                    /*background:url(public/newtheme/images7/icon.png);*/
+                    /*background:url(newtheme/images7/icon.png);*/
                 }
         
                 .zoom img {
@@ -73,8 +73,8 @@
         
                 .zoom img::selection { background-color: transparent; }
         
-                /*#ex2 img:hover { cursor: url(public/newtheme/images7/grab.cur), default; }
-                #ex2 img:active { cursor: url(public/newtheme/images7/grabbed.cur), default; }*/
+                /*#ex2 img:hover { cursor: url(newtheme/images7/grab.cur), default; }
+                #ex2 img:active { cursor: url(newtheme/images7/grabbed.cur), default; }*/
        
     </style>
     <?php
@@ -138,24 +138,24 @@
                 <center><h5 id="editjob" style="display: none;">Edit Job Modal</h5></center>
                 <center><h5 id="members" style="display: none;">Job Portal (Member/Candidates List)</h5></center>
                 <span class='zoom' id='ex2'>
-                    <img class="img-fluid img-thumbnail" id="1" src="{{ URL::to('public/images/')}}/{{$hrmimage[0]}}" onclick="cursor()" style="display: block; cursor: zoom-in;"/> 
-                    <img class="img-fluid img-thumbnail" id="2" src="{{ URL::to('public/images/')}}/{{$hrmimage[1]}}" onclick="cursor()" style="display: none; cursor: zoom-in;"/>
-                    <img class="img-fluid img-thumbnail" id="3" src="{{ URL::to('public/images/')}}/{{$hrmimage[2]}}" onclick="cursor()" style="display: none; cursor: zoom-in;"/>
+                    <img class="img-fluid img-thumbnail" id="1" src="{{ URL::to('images/')}}/{{$hrmimage[0]}}" onclick="cursor()" style="display: block; cursor: zoom-in;"/> 
+                    <img class="img-fluid img-thumbnail" id="2" src="{{ URL::to('images/')}}/{{$hrmimage[1]}}" onclick="cursor()" style="display: none; cursor: zoom-in;"/>
+                    <img class="img-fluid img-thumbnail" id="3" src="{{ URL::to('images/')}}/{{$hrmimage[2]}}" onclick="cursor()" style="display: none; cursor: zoom-in;"/>
                     
-                    <img class="img-fluid img-thumbnail" id="4" src="{{ URL::to('public/images/')}}/{{$hrmimage[3]}}" onclick="cursor()" style="display: none; cursor: zoom-in;"/>
-                    <img class="img-fluid img-thumbnail" id="5" src="{{ URL::to('public/images/')}}/{{$hrmimage[4]}}" onclick="cursor()" style="display: none; cursor: zoom-in;"/>
-                    <img class="img-fluid img-thumbnail" id="6" src="{{ URL::to('public/images/')}}/{{$hrmimage[5]}}" onclick="cursor()" style="display: none; cursor: zoom-in;"/>
-                    <img class="img-fluid img-thumbnail" id="7" src="{{ URL::to('public/images/')}}/{{$hrmimage[6]}}" onclick="cursor()" style="display: none; cursor: zoom-in;"/>
-                    <img class="img-fluid img-thumbnail" id="8" src="{{ URL::to('public/images/')}}/{{$hrmimage[7]}}" onclick="cursor()" style="display: none; cursor: zoom-in;"/>
-                    <img class="img-fluid img-thumbnail" id="9" src="{{ URL::to('public/images/')}}/{{$hrmimage[8]}}" onclick="cursor()" style="display: none; cursor: zoom-in;"/>
-                    <img class="img-fluid img-thumbnail" id="10" src="{{ URL::to('public/images/')}}/{{$hrmimage[9]}}" onclick="cursor()" style="display: none; cursor: zoom-in;"/>
-                    <img class="img-fluid img-thumbnail" id="11" src="{{ URL::to('public/images/')}}/{{$hrmimage[10]}}" onclick="cursor()" style="display: none; cursor: zoom-in;"/>
-                    <img class="img-fluid img-thumbnail" id="12" src="{{ URL::to('public/images/')}}/{{$hrmimage[11]}}" onclick="cursor()" style="display: none; cursor: zoom-in;"/>
-                    <img class="img-fluid img-thumbnail" id="13" src="{{ URL::to('public/images/')}}/{{$hrmimage[12]}}" onclick="cursor()" style="display: none; cursor: zoom-in;"/>
-                    <img class="img-fluid img-thumbnail" id="14" src="{{ URL::to('public/images/')}}/{{$hrmimage[13]}}" onclick="cursor()" style="display: none; cursor: zoom-in;"/>
-                    <img class="img-fluid img-thumbnail" id="15" src="{{ URL::to('public/images/')}}/{{$hrmimage[14]}}" onclick="cursor()" style="display: none; cursor: zoom-in;"/>
-                    <img class="img-fluid img-thumbnail" id="16" src="{{ URL::to('public/images/')}}/{{$hrmimage[15]}}" onclick="cursor()" style="display: none; cursor: zoom-in;"/>
-                    <img class="img-fluid img-thumbnail" id="17" src="{{ URL::to('public/images/')}}/{{$hrmimage[16]}}" onclick="cursor()" style="display: none; cursor: zoom-in;"/>
+                    <img class="img-fluid img-thumbnail" id="4" src="{{ URL::to('images/')}}/{{$hrmimage[3]}}" onclick="cursor()" style="display: none; cursor: zoom-in;"/>
+                    <img class="img-fluid img-thumbnail" id="5" src="{{ URL::to('images/')}}/{{$hrmimage[4]}}" onclick="cursor()" style="display: none; cursor: zoom-in;"/>
+                    <img class="img-fluid img-thumbnail" id="6" src="{{ URL::to('images/')}}/{{$hrmimage[5]}}" onclick="cursor()" style="display: none; cursor: zoom-in;"/>
+                    <img class="img-fluid img-thumbnail" id="7" src="{{ URL::to('images/')}}/{{$hrmimage[6]}}" onclick="cursor()" style="display: none; cursor: zoom-in;"/>
+                    <img class="img-fluid img-thumbnail" id="8" src="{{ URL::to('images/')}}/{{$hrmimage[7]}}" onclick="cursor()" style="display: none; cursor: zoom-in;"/>
+                    <img class="img-fluid img-thumbnail" id="9" src="{{ URL::to('images/')}}/{{$hrmimage[8]}}" onclick="cursor()" style="display: none; cursor: zoom-in;"/>
+                    <img class="img-fluid img-thumbnail" id="10" src="{{ URL::to('images/')}}/{{$hrmimage[9]}}" onclick="cursor()" style="display: none; cursor: zoom-in;"/>
+                    <img class="img-fluid img-thumbnail" id="11" src="{{ URL::to('images/')}}/{{$hrmimage[10]}}" onclick="cursor()" style="display: none; cursor: zoom-in;"/>
+                    <img class="img-fluid img-thumbnail" id="12" src="{{ URL::to('images/')}}/{{$hrmimage[11]}}" onclick="cursor()" style="display: none; cursor: zoom-in;"/>
+                    <img class="img-fluid img-thumbnail" id="13" src="{{ URL::to('images/')}}/{{$hrmimage[12]}}" onclick="cursor()" style="display: none; cursor: zoom-in;"/>
+                    <img class="img-fluid img-thumbnail" id="14" src="{{ URL::to('images/')}}/{{$hrmimage[13]}}" onclick="cursor()" style="display: none; cursor: zoom-in;"/>
+                    <img class="img-fluid img-thumbnail" id="15" src="{{ URL::to('images/')}}/{{$hrmimage[14]}}" onclick="cursor()" style="display: none; cursor: zoom-in;"/>
+                    <img class="img-fluid img-thumbnail" id="16" src="{{ URL::to('images/')}}/{{$hrmimage[15]}}" onclick="cursor()" style="display: none; cursor: zoom-in;"/>
+                    <img class="img-fluid img-thumbnail" id="17" src="{{ URL::to('images/')}}/{{$hrmimage[16]}}" onclick="cursor()" style="display: none; cursor: zoom-in;"/>
                 </span>
 
                 

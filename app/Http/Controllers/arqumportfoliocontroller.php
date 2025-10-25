@@ -36,7 +36,7 @@ class arqumportfoliocontroller extends Controller
     public function viewportfolioMobily($id){
         
         if($id == "MobilyLLC.png"){
-
+            
             return view('modals.viewmobilyportfolio',['i' => $id]);
 
         }

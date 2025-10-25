@@ -33,7 +33,7 @@
                     position:absolute; 
                     top:0;
                     right:0;
-                    /*background:url(public/newtheme/images7/icon.png);*/
+                    /*background:url(newtheme/images7/icon.png);*/
                 }
         
                 .zoom img {
@@ -42,8 +42,8 @@
         
                 .zoom img::selection { background-color: transparent; }
         
-                /*#ex2 img:hover { cursor: url(public/newtheme/images7/grab.cur), default; }
-                #ex2 img:active { cursor: url(public/newtheme/images7/grabbed.cur), default; }*/
+                /*#ex2 img:hover { cursor: url(newtheme/images7/grab.cur), default; }
+                #ex2 img:active { cursor: url(newtheme/images7/grabbed.cur), default; }*/
        
     </style>
     <?php
@@ -60,7 +60,7 @@
             <div class="modal-body">
                 <center><h5>{{$user[0]}}</h5></center>
            <span class='zoom' id='ex2'>
-                        <img class="img-fluid img-thumbnail" src="{{ URL::to('public/images/')}}/{{$i}}"/>  
+                        <img class="img-fluid img-thumbnail" src="{{ URL::to('images/')}}/{{$i}}"/>  
                     </span>
 
                 

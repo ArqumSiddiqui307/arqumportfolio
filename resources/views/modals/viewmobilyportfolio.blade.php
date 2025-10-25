@@ -64,7 +64,7 @@
                     position:absolute; 
                     top:0;
                     right:0;
-                    /*background:url(public/newtheme/images7/icon.png);*/
+                    /*background:url(newtheme/images7/icon.png);*/
                 }
         
                 .zoom img {
@@ -73,8 +73,8 @@
         
                 .zoom img::selection { background-color: transparent; }
         
-                /*#ex2 img:hover { cursor: url(public/newtheme/images7/grab.cur), default; }
-                #ex2 img:active { cursor: url(public/newtheme/images7/grabbed.cur), default; }*/
+                /*#ex2 img:hover { cursor: url(newtheme/images7/grab.cur), default; }
+                #ex2 img:active { cursor: url(newtheme/images7/grabbed.cur), default; }*/
        
     </style>
     <?php
@@ -117,14 +117,14 @@
                 <center><h5 id="department" style="display: none;">Store List</h5></center>
                 <center><h5 id="designation" style="display: none;">Market List</h5></center>
                 <span class='zoom' id='ex2'>
-                    <img class="img-fluid img-thumbnail" id="1" src="{{ URL::to('public/images/MobilyLLC/')}}/{{$hrmimage[0]}}" onclick="cursor()" style="display: block; cursor: zoom-in;"/> 
-                    <img class="img-fluid img-thumbnail" id="2" src="{{ URL::to('public/images/MobilyLLC/')}}/{{$hrmimage[1]}}" onclick="cursor()" style="display: none; cursor: zoom-in;"/>
-                    <img class="img-fluid img-thumbnail" id="3" src="{{ URL::to('public/images/MobilyLLC/')}}/{{$hrmimage[2]}}" onclick="cursor()" style="display: none; cursor: zoom-in;"/>
+                    <img class="img-fluid img-thumbnail" id="1" src="{{ URL::to('images/MobilyLLC/')}}/{{$hrmimage[0]}}" onclick="cursor()" style="display: block; cursor: zoom-in;"/> 
+                    <img class="img-fluid img-thumbnail" id="2" src="{{ URL::to('images/MobilyLLC/')}}/{{$hrmimage[1]}}" onclick="cursor()" style="display: none; cursor: zoom-in;"/>
+                    <img class="img-fluid img-thumbnail" id="3" src="{{ URL::to('images/MobilyLLC/')}}/{{$hrmimage[2]}}" onclick="cursor()" style="display: none; cursor: zoom-in;"/>
                     
-                    <img class="img-fluid img-thumbnail" id="4" src="{{ URL::to('public/images/MobilyLLC/')}}/{{$hrmimage[3]}}" onclick="cursor()" style="display: none; cursor: zoom-in;"/>
-                    <img class="img-fluid img-thumbnail" id="5" src="{{ URL::to('public/images/MobilyLLC/')}}/{{$hrmimage[4]}}" onclick="cursor()" style="display: none; cursor: zoom-in;"/>
-                    <img class="img-fluid img-thumbnail" id="6" src="{{ URL::to('public/images/MobilyLLC/')}}/{{$hrmimage[5]}}" onclick="cursor()" style="display: none; cursor: zoom-in;"/>
-                    <img class="img-fluid img-thumbnail" id="7" src="{{ URL::to('public/images/MobilyLLC/')}}/{{$hrmimage[6]}}" onclick="cursor()" style="display: none; cursor: zoom-in;"/>
+                    <img class="img-fluid img-thumbnail" id="4" src="{{ URL::to('images/MobilyLLC/')}}/{{$hrmimage[3]}}" onclick="cursor()" style="display: none; cursor: zoom-in;"/>
+                    <img class="img-fluid img-thumbnail" id="5" src="{{ URL::to('images/MobilyLLC/')}}/{{$hrmimage[4]}}" onclick="cursor()" style="display: none; cursor: zoom-in;"/>
+                    <img class="img-fluid img-thumbnail" id="6" src="{{ URL::to('images/MobilyLLC/')}}/{{$hrmimage[5]}}" onclick="cursor()" style="display: none; cursor: zoom-in;"/>
+                    <img class="img-fluid img-thumbnail" id="7" src="{{ URL::to('images/MobilyLLC/')}}/{{$hrmimage[6]}}" onclick="cursor()" style="display: none; cursor: zoom-in;"/>
                 </span>
 
                 
