@@ -212,7 +212,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    transition: all 0.3s ease; /* Transition for smooth zoom */
+    transition: all 0.3s ease;
     border: 2px solid var(--accent); 
     z-index: 10;
     padding: 5px; 
@@ -229,14 +229,10 @@
 
 /* --- HOVER CHANGES (Updated) --- */
 .timeline_item:hover .timeline_icon {
-    /* Apply scale to the whole icon container (circle) */
     transform: scale(1.15); 
-    /* Remove background change */
-    background: #1e1e1e; /* Explicitly keep the dark background */
+    background: #1e1e1e;
 }
 .timeline_item:hover .company_logo {
-    /* Remove scale from the logo itself, as we scale the parent */
-    /* transform: none; */
     transform: scale(1.5); 
 }
 /* ------------------------------- */
@@ -279,16 +275,27 @@
     margin-top: 15px;
 }
 .timeline_content ul li {
-    color: var(--text-light);
+    color: var(--text-light); /* Changed to text-light for better highlight */
     font-size: 15px;
     margin-bottom: 8px;
     line-height: 1.5;
+    position: relative;
+    padding-left: 20px;
 }
+/* *** UPDATED BULLET POINT CSS *** */
 .timeline_content ul li::before {
-    content: "🚀 "; 
+    content: '\f00c'; /* Unicode for solid checkmark */
+    font-family: "Font Awesome 6 Free"; /* Use the imported FA font */
+    font-weight: 900; /* For solid style */
     color: var(--accent);
+    position: absolute;
+    left: 0;
+    top: 0;
+    font-size: 14px;
+    line-height: 1.5;
     margin-right: 5px;
 }
+/* ******************************* */
 
 /* Responsive adjustments */
 @media (max-width: 768px) {

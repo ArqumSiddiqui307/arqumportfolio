@@ -7,9 +7,13 @@
             <a href="{{ url('/') }}">Home</a> <span>→</span> <span>About</span>
         </nav>
         <h1 class="page_title_center">About <span>Me.</span></h1>
-        {{-- <p class="intro_tagline">
-            I'm Arqum Siddiqui, a dedicated Software Engineer focused on building robust and scalable systems.
-        </p> --}}
+        
+        <p class="intro_summary">
+            Results-driven Senior Backend Developer with extensive experience in designing,
+            developing, and maintaining scalable backend systems using **Laravel** and **PHP**. 
+            Proven track record of building ERP systems, RESTful APIs, and high-performance 
+            database solutions for diverse industries.
+        </p>
     </section>
 
     <div class="content_sections_wrapper">
@@ -28,6 +32,7 @@
         <div class="section_card">
             <div class="section_title">Technical Expertise</div>
             <div class="skills_wrapper">
+                {{-- Content from Skills section --}}
                 <div class="skill_tile">
                     <i class="fa-brands fa-laravel"></i>
                     <h3>Laravel / PHP</h3>
@@ -55,6 +60,7 @@
             <div class="section_title">Professional Experience</div>
             <div class="experience_wrapper">
                 
+                {{-- Experience cards from CV (Jan 2025 – Present) --}}
                 <div class="exp_card">
                     <div class="exp_time">Jan 2025 – Present</div>
                     <h3>Senior Backend Developer | FameWheels</h3>
@@ -67,6 +73,7 @@
                     </ul>
                 </div>
 
+                {{-- Experience cards from CV (Sep 2024 – Dec 2024) --}}
                 <div class="exp_card">
                     <div class="exp_time">Sep 2024 – Dec 2024</div>
                     <h3>Back End Developer | MetaStrom</h3>
@@ -80,19 +87,21 @@
                     </ul>
                 </div>
                 
+                {{-- Experience cards from CV (Jun 2024 – Sep 2024) --}}
                 <div class="exp_card">
                     <div class="exp_time">Jun 2024 – Sep 2024</div>
                     <h3>Back End Developer | Webnet Pakistan Pvt Ltd</h3>
                     <span>Full-time | On-site</span>
                     <ul>
-                        <li>Developed scalable backend systems using Laravel.</li>
-                        <li>Optimized MySQL queries and database design.</li>
+                        <li>Developed and maintained scalable backend systems using Laravel.</li>
+                        <li>Designed efficient MySQL schemas and optimized SQL queries for faster data retrieval.</li>
                         <li>Integrated third-party APIs for enhanced functionality.</li>
                         <li>Collaborated with frontend developers for API compatibility.</li>
                         <li>Reduced production downtime by 30%.</li>
                     </ul>
                 </div>
 
+                {{-- Experience cards from CV (Apr 2021 – Jun 2024) --}}
                 <div class="exp_card">
                     <div class="exp_time">Apr 2021 – Jun 2024</div>
                     <h3>Software Developer | Amros Pharmaceuticals</h3>
@@ -105,6 +114,7 @@
                     </ul>
                 </div>
 
+                {{-- Experience cards from CV (2019 – 2021) --}}
                 <div class="exp_card">
                     <div class="exp_time">2019 – 2021</div>
                     <h3>Web Developer Level 3 | BOS</h3>
@@ -122,10 +132,19 @@
 </div>
 
 <style>
+/* --- Theme Variables (Included for context) --- */
+:root {
+    --bg-dark: #0a0a0a;
+    --text-light: #e6e6e6;
+    --accent: #b8ff48; /* Bright Green Accent */
+    --muted: #999;
+    --card-bg: #161616;
+}
+
 /* --- New Global Container and Text Styles to match the layout's theme --- */
 .ranx_container {
     max-width: 1100px;
-    margin: 50px auto; /* Centering with top/bottom margin */
+    margin: 50px auto;
     padding: 0 20px;
 }
 
@@ -135,7 +154,7 @@
     margin-bottom: 60px;
 }
 .breadcrumb_center {
-    display: inline-flex; /* Use inline-flex to shrink wrap */
+    display: inline-flex;
     background: rgba(255, 255, 255, 0.05);
     padding: 8px 15px;
     border-radius: 50px;
@@ -156,7 +175,7 @@
     color: var(--muted);
 }
 .page_title_center {
-    font-size: 4rem; /* Larger font size for prominence */
+    font-size: 4rem;
     font-weight: 900;
     color: var(--text-light);
     margin: 0;
@@ -165,36 +184,29 @@
     color: var(--accent);
 }
 
-.page_title {
-    font-size: 40px;
-    font-weight: 900;
-    color: var(--text-light); /* From layout CSS */
-    margin-bottom: 10px;
-}
-.page_title span {
-    color: var(--accent); /* Bright green from layout CSS */
-}
-
-.intro_tagline {
-    font-size: 18px;
+/* --- Introductory Summary --- */
+.intro_summary {
+    max-width: 700px;
+    margin: 25px auto 0;
+    font-size: 1.1rem;
     color: var(--muted);
-    margin-bottom: 40px;
+    line-height: 1.6;
+}
+.intro_summary strong {
+    color: var(--accent);
 }
 
-/* Container for all sections to adjust spacing */
 .content_sections_wrapper {
     padding-top: 20px;
 }
 
-/* --- Base Section Card Styles (Adjusted to use layout's theme variables) --- */
+/* --- Base Section Card Styles --- */
 .section_card {
-    /* Using a subtle background and border to match the dark theme */
-    background: var(--card-bg); /* Darker card background from layout CSS */
+    background: var(--card-bg);
     color: var(--text-light);
     padding: 30px;
     border-radius: 12px;
     margin-bottom: 30px;
-    /* Removed the blue gradient and used a subtle shadow */
     box-shadow: 0 4px 15px rgba(0,0,0,0.3); 
     border: 1px solid rgba(255,255,255,0.08);
 }
@@ -202,7 +214,7 @@
     font-size: 24px;
     font-weight: 700;
     margin-bottom: 25px;
-    color: var(--accent); /* Using the bright green accent color */
+    color: var(--accent);
     border-bottom: 2px solid rgba(184, 255, 72, 0.2);
     padding-bottom: 8px;
 }
@@ -211,7 +223,7 @@
     color: var(--text-light);
     line-height: 1.7;
 }
-.section_text p b {
+.section_text p strong {
     color: var(--accent);
     font-weight: 600;
 }
@@ -223,7 +235,7 @@
     gap: 20px;
 }
 .skill_tile {
-    background: #1e1e1e; /* Slightly different dark shade */
+    background: #1e1e1e;
     border-radius: 12px;
     padding: 25px;
     text-align: center;
@@ -253,7 +265,7 @@
     margin: 0;
 }
 
-/* --- Experience Section Styles --- */
+/* --- Experience Section Styles (UPDATED BULLET POINT CSS) --- */
 .experience_wrapper {
     display: flex;
     flex-direction: column;
@@ -268,11 +280,10 @@
 }
 .exp_card:hover {
     background: #252525;
-    transform: none; /* Keep a cleaner look, avoiding excessive movement */
     box-shadow: 0 4px 10px rgba(184, 255, 72, 0.1);
 }
 .exp_time {
-    color: var(--accent); /* Bright green time color */
+    color: var(--accent);
     font-weight: 700;
     font-size: 14px;
     margin-bottom: 8px;
@@ -292,16 +303,26 @@
 .exp_card ul {
     margin: 0;
     padding-left: 22px;
-    color: var(--text-light);
+    color: var(--muted);
     font-size: 15px;
-    list-style-type: '🚀 '; /* Adding a subtle icon for bullet points */
+    list-style-type: none;
 }
 .exp_card ul li {
     margin-bottom: 8px;
-    padding-left: 5px;
+    line-height: 1.6;
+    position: relative;
+    padding-left: 20px;
 }
-.exp_card ul li::marker {
-    color: var(--accent); /* Coloring the rocket emoji */
+/* This is the key change: Rocket replaced with Checkmark */
+.exp_card ul li::before {
+    content: '\f00c'; /* Unicode for solid checkmark */
+    font-family: "Font Awesome 6 Free"; /* Use the imported FA font */
+    font-weight: 900; /* For solid style */
+    color: var(--accent); 
+    position: absolute;
+    left: 0;
+    top: 0;
+    font-size: 14px;
 }
 
 /* --- Responsive Adjustments --- */
@@ -309,8 +330,11 @@
     .ranx_container {
         margin-top: 20px;
     }
-    .page_title {
-        font-size: 32px;
+    .page_title_center {
+        font-size: 3rem;
+    }
+    .intro_summary {
+        font-size: 1rem;
     }
     .section_card {
         padding: 20px;

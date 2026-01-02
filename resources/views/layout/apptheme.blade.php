@@ -10,6 +10,8 @@
   
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
   <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" rel="stylesheet">
+  
+  <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&display=swap" rel="stylesheet">
 
   <style>
     :root {
@@ -20,10 +22,16 @@
       --card-bg: #161616;
     }
 
+    /* ✅ NEW: Set base font size on HTML for better scaling */
+    html {
+        font-size: 100%; /* Base 16px */
+    }
+
     body {
+      /* ✅ UPDATED: Poppins to Lato */
       background: var(--bg-dark);
       color: var(--text-light);
-      font-family: 'Poppins', sans-serif;
+      font-family: 'Lato', sans-serif;
       overflow-x: hidden;
       margin: 0;
       padding: 0;
