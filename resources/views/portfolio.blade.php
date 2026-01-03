@@ -227,6 +227,11 @@
         font-size: 3rem;
     }
 }
+    
+.modal-header {
+    justify-content: space-between!important;
+    align-items: center!important;
+}
 </style>
 
 <div class="main_content">

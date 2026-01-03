@@ -55,7 +55,8 @@
                 <div id="loader"></div>
             <div class="modal-header">
                 <h4 class="modal-title">Mehroz Portfolio</h4>
-                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                <!-- <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button> -->
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close" style="background: white; border: none; font-size: 20px;">&times;</button>
             </div>
             <div class="modal-body">
                 <center><h5>{{$user[0]}}</h5></center>
