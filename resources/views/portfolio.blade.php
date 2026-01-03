@@ -432,7 +432,7 @@
 <script>
     // ... (Your existing JavaScript functions remain here)
     function getedit($id){
-        // alert($id);
+         alert($id);
         $.get('{{ URL::to("/viewportfolio")}}/'+$id,function(data){
         $('#modals').empty();
         $('#modals').append(data);
