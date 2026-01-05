@@ -45,6 +45,23 @@
                 <span>Location</span>
             </div>
         </div>
+        <div class="social_links_wrapper">
+            <a href="https://github.com/ArqumSiddiqui307" target="_blank" class="social_icon_box">
+                <i class="fa-brands fa-github"></i>
+            </a>
+            <a href="https://linkedin.com/in/arqum-siddiqui-366b67284" target="_blank" class="social_icon_box">
+                <i class="fa-brands fa-linkedin-in"></i>
+            </a>
+            <a href="https://facebook.com/arqumxidd" target="_blank" class="social_icon_box">
+                <i class="fa-brands fa-facebook-f"></i>
+            </a>
+            <a href="https://instagram.com/arqum_siddiqui" target="_blank" class="social_icon_box">
+                <i class="fa-brands fa-instagram"></i>
+            </a>
+            <a href="https://wa.me/923082575413" target="_blank" class="social_icon_box">
+                <i class="fa-brands fa-whatsapp"></i>
+            </a>
+        </div>
     </div>
 
     {{-- --- 1. Career Milestones (from SKILLS Page) --- --}}

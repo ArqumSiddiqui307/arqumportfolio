@@ -201,6 +201,53 @@
         grid-template-columns: 1fr;
       }
     }
+
+    /* --- SOCIAL ICONS STYLES --- */
+    .social_links_wrapper {
+        display: flex;
+        justify-content: center;
+        gap: 15px;
+        margin-top: 30px;
+        flex-wrap: wrap;
+    }
+
+    .social_icon_box {
+        background: #0f0f0f;
+        width: 60px;
+        height: 60px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 12px;
+        border: 1px solid rgba(255, 255, 255, 0.08);
+        color: var(--text-light);
+        font-size: 20px;
+        text-decoration: none;
+        transition: all 0.3s ease;
+        position: relative;
+    }
+
+    /* Hover effect: Green bottom border like your image */
+    .social_icon_box::after {
+        content: '';
+        position: absolute;
+        bottom: 12px;
+        width: 15px;
+        height: 2px;
+        background: var(--accent);
+        transition: width 0.3s ease;
+    }
+
+    .social_icon_box:hover {
+        background: #1a1a1a;
+        transform: translateY(-5px);
+        color: var(--accent);
+        border-color: var(--accent);
+    }
+
+    .social_icon_box:hover::after {
+        width: 30px; /* Expands line on hover */
+    }
   </style>
 </head>
 
