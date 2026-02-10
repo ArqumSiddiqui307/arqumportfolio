@@ -539,7 +539,7 @@
         var mm = document.getElementById("editjob");
 
         var n = document.getElementById("17");
-        var nn = document.getElementById("membersmembers");
+        var nn = document.getElementById("members");
 
         if (x.style.display === "block") {
 
@@ -1499,7 +1499,7 @@ function hrmprevious(){
     var mm = document.getElementById("editjob");
 
     var n = document.getElementById("17");
-    var nn = document.getElementById("membersmembers");
+    var nn = document.getElementById("members");
     
     if (y.style.display === "block") {
 

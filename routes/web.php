@@ -48,6 +48,8 @@ Route::get('/viewportfolio/{id}', function ($id) {
     return view('modals.viewportfolio',['i' => $id]);
 });
 
+Route::get('/viewportfolioFamehrmsApp/{id}','arqumportfoliocontroller@viewportfolioFamehrmsApp');
+
 Route::get('/viewportfoliohrms/{id}','arqumportfoliocontroller@viewportfoliohrms');
 
 Route::get('/viewportfolioJP/{id}','arqumportfoliocontroller@viewportfolioJP');

@@ -6,6 +6,14 @@ use Illuminate\Http\Request;
 
 class arqumportfoliocontroller extends Controller
 {
+    public function viewportfolioFamehrmsApp($id){
+        
+        if($id == "FAMEHRMS-Job-Portal-APP.jpeg"){
+
+            return view('modals.viewFamehrmsAppPortfolio',['i' => $id]);
+
+        }
+    }
     public function viewportfoliohrms($id){
         
         if($id == "HRMS-admin-dashboadd1.png"){

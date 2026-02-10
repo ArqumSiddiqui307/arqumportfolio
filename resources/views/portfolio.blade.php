@@ -246,7 +246,6 @@
         </section>
 
         <div class="main_content_scroll mCustomScrollbar" data-mcs-theme="minimal-dark">
-            
             <div class="portfolio_grid grid clearfix">
                 {{-- First Row of Portfolio Items --}}
                 <div class="grid-item portfolio_item p_design" >
@@ -422,6 +421,24 @@
                         </div>
                     </div>
                 </div>
+
+                <div class="grid-item portfolio_item p_design">
+                    <img src="{!! asset('images/FAMEHRMS-Job-Portal-APP.jpeg') !!}" alt="">
+                    <div class="portfolio_item_content d-flex flex-column align-items-center justify-content-center">
+                        <div class="portfolio_item_title">Mobile APP-HRMS (Famehrm)</div>
+                        <hr style="width: 40%;">
+                        <div class="item-preview__actions">
+                            <div id="fullscreen" class="item-preview__preview-buttons">
+                                <a data-view="screenshotGallery" href="#"onclick="geteditFHRapp({{'"FAMEHRMS-Job-Portal-APP.jpeg"'}})" role="button" class="btn-icon screenshots" rel="noopener">
+                                    Screenshots
+                                </a>
+                                <a data-view="itemPreviewButtonTracking" href="https://play.google.com/store/apps/details?id=com.famehrm   " role="button" class="btn-icon live-preview" target="_blank" rel="noopener nofollow">
+                                    Visit
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
             
         </div> {{-- End main_content_scroll --}}
@@ -437,6 +454,14 @@
         $('#modals').empty();
         $('#modals').append(data);
         $('#getmeImage').modal('show');
+        });
+    }
+    function geteditFHRapp($id){
+        // alert($id);
+        $.get('{{ URL::to("/viewportfolioFamehrmsApp")}}/'+$id,function(data){
+        $('#modals').empty();
+        $('#modals').append(data);
+        $('#getmeImageFamehrmsApp').modal('show');
         });
     }
     function getedithrms($id){
